@@ -82,7 +82,7 @@ namespace CollegeSchedule.Services
                 lessonDto.GroupParts[part.GroupPart] = new LessonPartDto
                 {
                     Subject = part.Subject.Name,
-                    Teacher = $"{part.Teacher.LastName} {part.Teacher.FirstName}" + $"{part.Teacher.MiddleName}",
+                    Teacher = $"{part.Teacher.LastName} {part.Teacher.FirstName} {part.Teacher.MiddleName}",
                     TeacherPosition = part.Teacher.Position,
                     Classroom = part.Classroom.RoomNumber,
                     Building = part.Classroom.Building.Name,
