@@ -14,7 +14,7 @@ namespace CollegeSchedule.Controllers
         {
             _service = service;
         }
-        [HttpGet("grout/{groupName}")]
+        [HttpGet("group/{groupName}")]
         public async Task<IActionResult> GetSchedule(string groupName, DateTime start, DateTime end)
         {
             var result = await _service.GetScheduleForGroup(groupName, start.Date, end.Date);
