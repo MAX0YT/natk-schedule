@@ -18,6 +18,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
  options.UseNpgsql(connectionString));
 
 builder.Services.AddScoped<IScheduleService, ScheduleService>();
+builder.Services.AddScoped<IGroupsService, GroupsService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
